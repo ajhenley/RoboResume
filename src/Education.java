@@ -7,35 +7,10 @@ public class Education {
     private String degree;
 
 
-    public Education(String aSchoolName, int aYearGrad, String degreeType, String aMajor,String persID) {
+    public Education(String aSchoolName, int aYearGrad, String degreeType, String aMajor) {
         schoolName=aSchoolName;
         yearGrad=aYearGrad;
-        setDegree(degreeType, aMajor);
-    }
-
-    public void setSchool(String aSchoolName)
-    {
-        schoolName=aSchoolName;
-    }
-    public void setYearGrade(int aYear)
-    {
-        yearGrad=aYear;
-    }
-    public void setDegree(String degreeType, String aMajor)
-    {
         degree = degreeType +" in "	+ aMajor;
-    }
-    public String getSchool()
-    {
-        return schoolName;
-    }
-    public String getDegree()
-    {
-        return degree;
-    }
-    public int getYear()
-    {
-        return yearGrad;
     }
 
     @Override

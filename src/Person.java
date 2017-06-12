@@ -11,21 +11,23 @@ public class Person {
     ArrayList<Job> jobs = new ArrayList<Job>();
     ArrayList<Skill> skills = new ArrayList<Skill>();
 
-    public void addEducation(String aSchoolName, int aYearGrad, String degreeType, String aMajor,String persID){
-        Education e = new Education(aSchoolName, aYearGrad, degreeType, aMajor, persID);
-        eds.add(e);
+    public Person(String myName, String myEmail, String myLinkedin){
+        name = myName;
+        email = myEmail;
+        linkedin = myLinkedin;
     }
-    public void addJob(String aName, String aCompany, String aRole, String aStartDate, String anEndDate){
-        Job j = new Job(aName, aCompany, aRole, aStartDate, anEndDate);
+
+    public void addEducation(Education ed){
+        eds.add(ed);
+    }
+    public void addJob(Job j){
         jobs.add(j);
     }
-    public void addSkill(String aName,String aRating,String persID){
-        Skill s = new Skill(aName,aRating,persID);
+    public void addSkill(Skill s){
         skills.add(s);
     }
 
-    public void toString(){
-
+    public String toString(){
+        return name+"\n"+email +"\n"+linkedin +"\n \n"+eds.toString() +jobs.toString()+skills.toString();
     }
-
 }

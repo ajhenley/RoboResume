@@ -5,27 +5,9 @@ public class Skill {
     private String skillName;
     private String skillRating;
 
-    public Skill(String aName,String aRating,String persID) {
-        // TODO Auto-generated constructor stub
+    public Skill(String aName,String aRating) {
         skillName=aName;
         skillRating=aRating;
-    }
-
-    public String getName()
-    {
-        return skillName;
-    }
-    public String getRating()
-    {
-        return skillRating;
-    }
-    public void setName(String skill)
-    {
-        skillName=skill;
-    }
-    public void setRating(String rating)
-    {
-        skillRating=rating;
     }
 
     @Override
